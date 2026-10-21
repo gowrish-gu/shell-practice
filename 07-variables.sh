@@ -9,6 +9,6 @@ echo "Present directory: $PWD"
 echo "Who is running the script: $USER"
 echo "Home directory of the user: $HOME"
 echo "PID of the script: $$"
-slepp 100 &
+sleep 100 &
 echo "PID of recently executed background process: $!"
 echo "All args passed to script: $*"                    #treats as single args 
