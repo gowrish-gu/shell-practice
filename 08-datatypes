@@ -4,5 +4,5 @@
 fruits=("Apple" "Mango" "Banana")
 
 echo "Fruits are: ${fruits[@]}"
-echo "${fruits[0]}"
-echo "${fruits[1]}"
+echo "First fruit is: ${fruits[0]}"
+echo "Second fruit is: ${fruits[1]}"
