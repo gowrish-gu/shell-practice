@@ -3,4 +3,10 @@
 echo "Please enter your username::"
 read USER_NAME        
 
-echo "Your username is $USER_NAME .... "
+echo "Your username is $USER_NAME.... "
+
+echo "Please enter your password"
+read -s PASSWORD
+
+echo "Thank you"
+echo "You are sucessfully login"
