@@ -3,7 +3,7 @@
 
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
-LOGS_FILE="/var/log/shell-script/$0.log"
+LOGS_FILE="/var/log/shell-script/$0.log"   #seperate script name stored
 
 if [ $USER_ID -ne 0 ]; then
     echo "Please run this script with root user..."
@@ -21,7 +21,7 @@ install_package() {
     fi
 }
 
-
+#Redirect the output to logs file
 dnf install nginx -y &>> $LOGS_FILE
 install_package $? "Installing nginx"
 
