@@ -22,13 +22,13 @@ install_package() {
 }
 
 
-dnf install nginx -y
+dnf install nginx -y &>> $LOGS_FILE
 install_package $? "Installing nginx"
 
-dnf install mysql -y
+dnf install mysql -y &>> $LOGS_FILE
 install_package $? "Installing mysql"
 
-dnf install nodejs -y
+dnf install nodejs -y &>> $LOGS_FILE
 install_package $? "Installing nodejs"
 
 
