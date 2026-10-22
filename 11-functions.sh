@@ -22,10 +22,10 @@ dnf install nginx -y
 install_package $? "Installing nginx"
 
 dnf install mysql -y
-install_package $? "Installing nginx"
+install_package $? "Installing mysql"
 
 dnf install nodejs -y
-install_package $? "Installing nginx"
+install_package $? "Installing nodejs"
 
 
 
