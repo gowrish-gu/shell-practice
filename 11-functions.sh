@@ -21,6 +21,12 @@ install_package() {
 dnf install nginx -y
 install_package $? "Installing nginx"
 
+dnf install mysql -y
+install_package $? "Installing nginx"
+
+dnf install nodejs -y
+install_package $? "Installing nginx"
+
 
 
 
