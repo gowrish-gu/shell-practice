@@ -37,4 +37,5 @@ if [ $? -ne 0 ]; then
     exit 0
 else
     echo "Installed nodejs sucessfully...!"
+fi
 
