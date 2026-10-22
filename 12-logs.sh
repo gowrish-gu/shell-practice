@@ -3,7 +3,7 @@
 
 USER_ID=$(id -u)
 LOGS_FOLDER="/var/log/shell-script"
-LOGS_FILE="/var/log/shell-script/$0.log"   #seperate script name stored
+LOGS_FILE="/var/log/shell-script/$0.log"   #seperate script names stored here
 
 if [ $USER_ID -ne 0 ]; then
     echo "Please run this script with root user..."
