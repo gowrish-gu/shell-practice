@@ -11,7 +11,7 @@ fi
 echo "Installing Nginx"
 dnf install nginxxx -y
 
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
     echo "Installing nginx is failure...."
     exit 1
 else
