@@ -4,7 +4,8 @@
 USER_ID=$(id -u)
 
 if [ $USER_ID -ne 0 ]; then
-    echo "Please switch to root User..."
+    echo "Please run this script with root user..."
 fi
 
+echo "Installing Nginx"
 dnf install nginx -y
