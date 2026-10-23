@@ -22,7 +22,7 @@ install_package() {
 
 for package in $@    # sudo sh 14-loops.sh nginx mysql nodejs
 do
-    dnf install $package -y
+    dnf install $package -y &>>$LOGS_FILE
     install_package $? "$package Installation"
 done
 
