@@ -24,6 +24,7 @@ for package in $@    # sudo sh 14-loops.sh nginx mysql nodejs
 do
     dnf install $package -y
     install_package $? "$package Installation"
+done
 
 
 
